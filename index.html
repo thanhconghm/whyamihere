@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+    *, 
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Sora", serif;
+    }
+    .container{
+        width: 100vw ;
+        height: 100vh;
+        background: #ff4a4a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        background: #ffffff;
+        padding: 25px 12px;
+        border-radius: 6px;
+    }
+
+    .title-form{
+        font-size: 24px;
+        line-height: 22px;
+        font-weight: 600px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .input-text{
+        outline: none;
+        border: 1px solid #e7e7e7;
+        border-radius: 6px;
+        padding: 8px 12px;
+        width: 100%;
+    }
+
+    .input-username{
+        margin-bottom: 10px;
+    }
+
+    .input-password{
+        margin-bottom: 20px;
+    }
+
+    .submit{
+        width: 200px;
+        border-radius: 6px;
+        padding: 12px 20px;
+        background-color: aqua;
+        border: 1px solid #894aff;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="" method="post">
+                <h1 class="title-form">hmmmmm</h1>
+                <div>
+                <!-- <label for="username">username</label> -->
+                <input class="input-text input-username" type="text" placeholder="username">
+                </div>
+                <div>
+                <!-- <label for="password">password</label> -->
+                <input class="input-text input-password" type="text" name="password" placeholder="password">
+                </div>
+                <button class="submit" type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
