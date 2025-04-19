@@ -100,6 +100,17 @@
 <script>
     let registerForm = document.getElementById("registerForm");
     console.log(registerForm);
-    registerForm.addEventListener("submit", (event) =>)
-    
+    registerForm.addEventListener("submit", (event) => {
+        console.log("dang nhan")
+        event.preventDefault(); // ngan khong cho su kien reload trang
+
+        // console.log(registerForm.fullname.value);
+        const user = {
+            fullname: registerForm.fullname.value.trim(), // loai bo khoang trang
+            email: registerForm.email.value.trim(),
+            password: registerForm.password.value.trim()
+        }
+        console.log(user);
+    })
+
 </script>
